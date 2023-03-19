@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 @tailwind base;
@@ -52,8 +53,9 @@
     #ffffff -278.56%,
     #6d6d6d -78.47%,
     #11101d 91.61%
-  );
+    );
 }
+
 
 .bg-black-gradient-2 {
   background: linear-gradient(
@@ -61,7 +63,7 @@
     #ffffff -278.56%,
     #6d6d6d -78.47%,
     #11101d 91.61%
-  );
+    );
 }
 
 .bg-gray-gradient {
@@ -69,6 +71,15 @@
     153.47deg,
     rgba(255, 255, 255, 0) -341.94%,
     #14101d 95.11%
+    );
+}
+  
+.bg-red-gradient{
+background: linear-gradient(
+  147.39deg,
+  #fff -278.56%,
+  #824b4b -78.47%,
+  #370a0a 51.61% 
   );
 }
 
