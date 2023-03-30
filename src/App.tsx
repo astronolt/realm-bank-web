@@ -4,7 +4,7 @@ import { Navbar, Billing, CardDeal, Business, Clients, CTA, Stats, Footer, Testi
 const App = () => (
   <div className="bg-primary w-full overflow-hidden text-white">
 
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+    <div className={`${styles.paddingX} ${styles.flexCenterNav}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
       </div>

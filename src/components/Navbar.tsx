@@ -10,13 +10,15 @@ const Navbar = () => {
   
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
-      <img src={logo} alt="sendbar" className='w-[124px] h-[32px]rounded-full px-2 py-1 border-1 border-rose-500' />
+      <a href="">
+        <img src={logo} alt="sendbar" className='bg-gold-gradient h-[52px] rounded-xl border-2 border-[#ffdb58] ' />
+      </a>
 
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px]
+            className={`font-default font-normal cursor-pointer text-[16px]
             ${index === navLinks.length -1 ? 'mr-0' : 'mr-10'}`}
           >
             <a href={`#${nav.id}`}>
@@ -28,7 +30,7 @@ const Navbar = () => {
 
 
       { /** mobile menu */ }
-      <div className='sm:hidden flex flex-1 justify-end items-center'>
+      <div className='sm:hidden flex flex-1 justify-end items-center cursor-pointer'>
           <img src={ toggle ? close : menu }
             alt="menu"
             className='w-[28px] h-[28px] object-contain'
